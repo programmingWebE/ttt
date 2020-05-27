@@ -1,0 +1,171 @@
+.contacts {
+	position: relative;
+	padding-bottom: 15em;
+}
+
+.contacts__list {
+	margin-bottom: 12px;
+}
+
+.contacts__list li {
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.contacts__list li a {
+	position: relative;
+	margin-right: 7px;
+	-webkit-transition: 0.3s color;
+	-o-transition: 0.3s color;
+	transition: 0.3s color;
+}
+
+.contacts__list li a:hover {
+	color: red;
+}
+
+.contacts__list li a:after {
+	margin-left: 9px;
+	content: '/';
+}
+
+.contacts__list li,
+.contacts__list a {
+	font-size: 16px;
+	line-height: 1.3;
+	color: #333333;
+}
+
+.contacts__wrap {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.contacts__item--data {
+	width: 370px;
+}
+
+.contacts__item--content {
+	width: -webkit-calc(100% - 370px);
+	width: calc(100% - 370px);
+	padding-right: 20px;
+}
+
+.contacts__title {
+	font-size: 60px;
+	line-height: 1;
+	color: #333333;
+	text-transform: uppercase;
+	font-weight: 900;
+	padding-bottom: 46px;
+}
+
+.contacts__text {
+	max-width: 430px;
+	padding-bottom: 52px;
+}
+
+.contacts__text p {
+	font-size: 18px;
+	line-height: 1.6;
+	color: #5d5d5d;
+}
+
+.contacts__phone {
+	font-size: 48px;
+	line-height: 1;
+	color: #333333;
+	font-weight: 900;
+}
+
+.contacts__col {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.contacts__icon {
+	max-width: 30px;
+	width: 100%;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin-right: 40px;
+}
+
+.contacts__icon svg {
+	display: block;
+	width: 30px;
+	height: 30px;
+	fill: #10adf4;
+}
+
+.contacts__data {
+	color: #10adf4;
+	font-weight: 200;
+}
+
+.contacts__data--email {
+	font-size: 30px;
+	line-height: 1;
+}
+
+.contacts__data--phone {
+	font-size: 36px;
+	line-height: 1;
+}
+
+.contacts__data--address {
+	font-size: 24px;
+	line-height: 1.9;
+}
+
+@media screen and (max-width: 1199px) {
+
+.contacts__icon {
+	margin-right: 25px;
+}
+
+.contacts__data--email {
+	font-size: 26px;
+}
+
+.contacts__data--phone {
+	font-size: 32px;
+}
+
+.contacts__data--address {
+	font-size: 20px;
+}
+
+}
+
+@media screen and (max-width: 780px) {
+
+.contacts__data--email {
+	font-size: 22px;
+}
+
+.contacts__data--phone {
+	font-size: 28px;
+}
+
+.contacts__data--address {
+	font-size: 16px;
+}
+
+}
+
